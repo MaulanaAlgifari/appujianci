@@ -28,6 +28,7 @@ class Welcome extends CI_Controller
         $umur = $this ->input->post ('umur');
 
 
+
         
         $blade = new Blade(VIEWPATH, APPPATH . 'cache');
         echo $blade->make('tampil', ['nama' => $nama])->render();
